@@ -1,0 +1,61 @@
+div {
+    margin: 0;
+}
+
+#main {
+    margin: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
+}
+
+#card {
+    background: var(--color-black);
+    color: var(--color-white);
+    border: 1px solid #DCCA87;
+    border-radius: 0;
+}
+
+.card-title {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 25px;
+   
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+#breakline {
+    background: black;
+    height: 3px;
+    margin: 10px 0;
+}
+
+.custom__quantity {
+    background-color: var(--color-crimson);
+      color: var(--color-black);
+      font-family: var(--font-base);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 28px;
+      font-size: 18px;
+      padding: 2px ;
+      border-radius: 1px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin-right: 10px;
+      text-transform: capitalize;
+  }
+
+
+#footer {
+    margin: 20px;
+    padding: 5px;
+}
+
+#login {
+    margin-top: 10%;
+}
+
+
