@@ -36,7 +36,7 @@ export default function Navbar() {
         <li className='p__opensans'><a href='#contact'>Contact</a></li>
 
         {(localStorage.getItem("authToken"))
-          ? <li className='p__opensans'><a href='/myOrder'>My Orders</a></li>
+          ? <li className='p__opensans'><Link to='/myOrder'>My Orders</Link></li>
           : ""
         }
 
@@ -72,6 +72,10 @@ export default function Navbar() {
               <li className='p__opensans'><a href='#menu'>Menu</a></li>
               <li className='p__opensans'><a href='#contact'>Contact</a></li>
               <li className='p__opensans'><Link to='/login'>LogIn</Link></li>
+              {(localStorage.getItem("authToken"))
+          ? <li className='p__opensans'><Link to='/myOrder'>My Orders</Link></li>
+          : ""
+        }
               <li className='p__opensans'><a href='/' onClick={handleLogout}>LogOut</a></li>
             </ul>
           </div>
