@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import images from '../../constraints/images'
 
-import {  useNavigate } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 import Badge from 'react-bootstrap/Badge';
 import Modal from '../../Modal';
 import Cart from '../../container/Cart/Cart';
@@ -46,9 +46,9 @@ export default function Navbar() {
       {(!localStorage.getItem("authToken"))
         ?
         <div className='app__navbar-login'>
-          <a href='/login' className='p__opensans'>LogIn</a>
+          <Link to='/login' className='p__opensans'>LogIn</Link>
           <div />
-          <a href='/createuser' className='p__opensans' >SignUp</a>
+          <Link to='/createuser' className='p__opensans' >SignUp</Link>
         </div>
         :
         <div className='app__navbar-login'>
@@ -71,7 +71,7 @@ export default function Navbar() {
               <li className='p__opensans'><a href='#about'>About</a></li>
               <li className='p__opensans'><a href='#menu'>Menu</a></li>
               <li className='p__opensans'><a href='#contact'>Contact</a></li>
-              <li className='p__opensans'><a href='/login'>LogIn</a></li>
+              <li className='p__opensans'><Link to='/login'>LogIn</Link></li>
               <li className='p__opensans'><a href='/' onClick={handleLogout}>LogOut</a></li>
             </ul>
           </div>
