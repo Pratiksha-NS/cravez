@@ -6,7 +6,7 @@ const port = 5000;
 mongoDB();
 
 app.use((req, res, next)=>{
-    res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");  //replace by frontend render url
+    res.setHeader("Access-Control-Allow-Origin","https://cravez.onrender.com");  //replace by frontend render url
     res.header("Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept");
     next();
